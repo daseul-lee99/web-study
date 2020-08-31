@@ -4,8 +4,6 @@ Momentum on Vanilla JS
 
 From https://nomadcoders.co/javascript-for-beginners/lobby
 
----
-
 <br>
 
 ## :star2: ​Features
@@ -16,8 +14,6 @@ From https://nomadcoders.co/javascript-for-beginners/lobby
 - Daily Quote
 - Daily Photo
 - Offline Support
-
----
 
 <br>
 
