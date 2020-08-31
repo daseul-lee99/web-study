@@ -7,5 +7,5 @@ Web that i want to learn
 
 ## :mag_right: ​LIST
 
-- [Chrome App - Momentum](./nomadcoders/1_ChromeApp_Momentum/README.md)
+- [Chrome App - Momentum](https://github.com/daseul-lee99/web-study/tree/master/nomadcoders/1_ChromeApp_Momentum)
 
