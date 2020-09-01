@@ -26,5 +26,5 @@ From https://nomadcoders.co/javascript-for-beginners/lobby
 
 <br>
 
-
-
+- JS 파일은 항상 body 제일 마지막에 추가
+- `<script ... />`가 아니라 `<script ...></script>`로 닫아줘야 함
