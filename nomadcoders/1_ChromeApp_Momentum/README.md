@@ -28,3 +28,11 @@ From https://nomadcoders.co/javascript-for-beginners/lobby
 
 - JS 파일은 항상 body 제일 마지막에 추가
 - `<script ... />`가 아니라 `<script ...></script>`로 닫아줘야 함
+
+<br>
+
+- `var`: ES6 이후에 `var`가 가진 문제점들을 해결하기 위해 `let`, `const`가 등장
+  - 같은 변수명을 여러 번 선언(재선언)해도 에러 X
+  - 변수가 선언되지 않았는데도 참조 가능(undifined)
+- `const`: 선언 및 초기화 이후에 값 변경 X
+- `let`: 선언 및 초기화 이후에 변경 O
