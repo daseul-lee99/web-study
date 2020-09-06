@@ -41,7 +41,7 @@ From https://nomadcoders.co/javascript-for-beginners/lobby
 
   - 함수 내부에 선언들을 유효범위 최상단으로 끌어올리는(Hoisting) 것
 
-  - 자바스크립트 Parser가 함수 실행 전 함수 내부를 한 번 훑으면서, 함수 내부의 **변수/함수 선언(할당 X)**을 내부적으로 맨 위로 끌어올림
+  - 자바스크립트 Parser가 함수 실행 전 함수 내부를 한 번 훑으면서, 함수 내부의 **변수/함수 선언(할당 X)** 을 내부적으로 맨 위로 끌어올림
 
   - 끌어올려진 변수/함수 선언의 유효범위는 `{}` 내부
 
@@ -65,7 +65,7 @@ From https://nomadcoders.co/javascript-for-beginners/lobby
     - 위의 code는 내부적으로 아래와 같이 작동함. 따라서 `var a = "aaa";` 코드 중 `var a` 의 선언부만(할당부 X) 맨 위로 끌러올려져서 `console.log(a);` 라인이 문제 없이 작동함(`undefined` 출력)
     - `let b = "bbb";` 는 `let` 변수이기 때문에 호이스팅이 일어나지 않음
 
-    
+    <br>
 
     ```javascript
     // code
