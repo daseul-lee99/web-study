@@ -36,3 +36,56 @@ From https://nomadcoders.co/javascript-for-beginners/lobby
   - 변수가 선언되지 않았는데도 참조 가능(undifined)
 - `const`: 선언 및 초기화 이후에 값 변경 X
 - `let`: 선언 및 초기화 이후에 변경 O
+
+- [호이스팅(Hoisting)이란?](https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html)
+
+  - 함수 내부에 선언들을 유효범위 최상단으로 끌어올리는(Hoisting) 것
+
+  - 자바스크립트 Parser가 함수 실행 전 함수 내부를 한 번 훑으면서, 함수 내부의 **변수/함수 선언(할당 X)**을 내부적으로 맨 위로 끌어올림
+
+  - 끌어올려진 변수/함수 선언의 유효범위는 `{}` 내부
+
+  - `var` 변수/함수에서만 호이스팅이 일어남(`let, const` 변수 선언과 함수 표현식은 호이스팅 X)
+
+    ```javascript
+    // code
+    console.log(a);   // undefined
+    var a = "aaa";
+    let b = "bbb";
+    ```
+
+    ```javascript
+    // hoisting
+    var a;
+    console.log(a);
+    a = "aaa";
+    let b = "bbb";
+    ```
+
+    - 위의 code는 내부적으로 아래와 같이 작동함. 따라서 `var a = "aaa";` 코드 중 `var a` 의 선언부만(할당부 X) 맨 위로 끌러올려져서 `console.log(a);` 라인이 문제 없이 작동함(`undefined` 출력)
+    - `let b = "bbb";` 는 `let` 변수이기 때문에 호이스팅이 일어나지 않음
+
+    
+
+    ```javascript
+    // code
+    foo();
+    foo2();   // error
+    
+    function foo() { ... } // 함수 선언문
+    var foo2 = function() { ... } // 함수 표현식
+    ```
+
+    ```javascript
+    // hoisting
+    var foo2;
+    function foo() { ... }
+    
+    foo();
+    foo2();
+    
+    foo2 = function() { ... }
+    ```
+
+    - 위의 code는 내부적으로 아래와 같이 작동함. 따라서 `var` 함수인 `foo2()` 와 함수선언문인 `foo()` 가 호이스팅됨
+    - `var foo2` 변수에 **할당**된 함수 표현식 부분은 호이스팅 되지 않기 때문에 에러가 발생함
